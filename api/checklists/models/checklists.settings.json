@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checklists",
+  "info": {
+    "name": "Services",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "idService": {
+      "type": "uid"
+    },
+    "car": {
+      "model": "car",
+      "via": "service"
+    },
+    "service": {
+      "type": "enumeration",
+      "enum": [
+        "Mantenimiento",
+        "ITV",
+        "Seguro",
+        "Renting",
+        "Reparacion"
+      ]
+    },
+    "oilAndFilter": {
+      "type": "boolean"
+    },
+    "airFilter": {
+      "type": "boolean"
+    },
+    "cabinFilter": {
+      "type": "boolean"
+    },
+    "fuelFilter": {
+      "type": "boolean"
+    },
+    "brakeFluid": {
+      "type": "boolean"
+    },
+    "coolingLiquid": {
+      "type": "boolean"
+    },
+    "sparkPlug": {
+      "type": "boolean"
+    },
+    "timingBelts": {
+      "type": "boolean"
+    },
+    "backGarnishes": {
+      "type": "boolean"
+    },
+    "airConditioningSystem": {
+      "type": "boolean"
+    },
+    "particulateFilters": {
+      "type": "boolean"
+    },
+    "description": {
+      "type": "text"
+    },
+    "alertDate": {
+      "type": "datetime"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "operation": {
+      "via": "service",
+      "model": "operations"
+    }
+  }
+}

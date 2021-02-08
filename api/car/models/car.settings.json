@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cars",
+  "info": {
+    "name": "car",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "idCar": {
+      "type": "uid"
+    },
+    "matricula": {
+      "type": "string"
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "Motor": {
+      "type": "string"
+    },
+    "num_bastidor": {
+      "type": "string"
+    },
+    "fecha_compra": {
+      "type": "date"
+    },
+    "fecha_alta": {
+      "type": "date"
+    },
+    "kilometros": {
+      "type": "biginteger"
+    },
+    "recordatorio_km": {
+      "type": "datetime"
+    },
+    "activo": {
+      "type": "boolean"
+    },
+    "users_permissions_user": {
+      "via": "cars",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "service": {
+      "via": "car",
+      "collection": "checklists"
+    },
+    "operation": {
+      "via": "car",
+      "model": "operations"
+    }
+  }
+}

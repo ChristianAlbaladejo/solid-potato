@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operations",
+  "info": {
+    "name": "Operations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "idOperation": {
+      "type": "uid"
+    },
+    "user": {
+      "via": "operations",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "Cliente": {
+      "via": "operationsClient",
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "car": {
+      "model": "car",
+      "via": "operation"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "km": {
+      "type": "biginteger"
+    },
+    "nextDate": {
+      "type": "date"
+    },
+    "service": {
+      "model": "checklists",
+      "via": "operation"
+    },
+    "tokenFireBase": {
+      "type": "string"
+    }
+  }
+}
