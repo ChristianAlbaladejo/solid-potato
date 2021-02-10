@@ -19,11 +19,6 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "Cliente": {
-      "via": "operationsClient",
-      "plugin": "users-permissions",
-      "collection": "user"
-    },
     "car": {
       "model": "car",
       "via": "operation"
@@ -43,6 +38,11 @@
     },
     "tokenFireBase": {
       "type": "string"
+    },
+    "cliente": {
+      "via": "clienteOperation",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

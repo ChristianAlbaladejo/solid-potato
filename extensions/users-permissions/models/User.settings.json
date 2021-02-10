@@ -85,13 +85,12 @@
       "collection": "operations",
       "via": "user"
     },
-    "operationsClient": {
-      "collection": "operations",
-      "via": "Cliente",
-      "dominant": true
-    },
     "tokenFireBase": {
       "type": "string"
+    },
+    "clienteOperation": {
+      "collection": "operations",
+      "via": "cliente"
     }
   }
 }

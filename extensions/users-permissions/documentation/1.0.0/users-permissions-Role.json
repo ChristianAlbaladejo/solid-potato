@@ -591,14 +591,14 @@
                     "type": "string"
                   }
                 },
-                "operationsClient": {
+                "tokenFireBase": {
+                  "type": "string"
+                },
+                "clienteOperation": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                },
-                "tokenFireBase": {
-                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"

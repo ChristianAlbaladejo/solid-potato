@@ -1349,12 +1349,6 @@
                 "user": {
                   "type": "string"
                 },
-                "Cliente": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "car": {
                   "type": "string"
                 },
@@ -1373,56 +1367,7 @@
                 "tokenFireBase": {
                   "type": "string"
                 },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "operationsClient": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "idOperation": {
-                  "type": "uid"
-                },
-                "user": {
-                  "type": "string"
-                },
-                "Cliente": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "car": {
-                  "type": "string"
-                },
-                "date": {
-                  "type": "string"
-                },
-                "km": {
-                  "type": "integer"
-                },
-                "nextDate": {
-                  "type": "string"
-                },
-                "service": {
-                  "type": "string"
-                },
-                "tokenFireBase": {
+                "cliente": {
                   "type": "string"
                 },
                 "published_at": {
@@ -1439,6 +1384,55 @@
           },
           "tokenFireBase": {
             "type": "string"
+          },
+          "clienteOperation": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "idOperation": {
+                  "type": "uid"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "car": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "km": {
+                  "type": "integer"
+                },
+                "nextDate": {
+                  "type": "string"
+                },
+                "service": {
+                  "type": "string"
+                },
+                "tokenFireBase": {
+                  "type": "string"
+                },
+                "cliente": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1511,14 +1505,14 @@
               "type": "string"
             }
           },
-          "operationsClient": {
+          "tokenFireBase": {
+            "type": "string"
+          },
+          "clienteOperation": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "tokenFireBase": {
-            "type": "string"
           },
           "created_by": {
             "type": "string"

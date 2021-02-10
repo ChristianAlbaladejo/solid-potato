@@ -65,7 +65,7 @@
       "type": "text"
     },
     "alertDate": {
-      "type": "datetime"
+      "type": "date"
     },
     "date": {
       "type": "datetime"

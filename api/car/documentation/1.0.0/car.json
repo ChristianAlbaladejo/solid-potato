@@ -622,14 +622,14 @@
                   "type": "string"
                 }
               },
-              "operationsClient": {
+              "tokenFireBase": {
+                "type": "string"
+              },
+              "clienteOperation": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
-              },
-              "tokenFireBase": {
-                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -729,12 +729,6 @@
               "user": {
                 "type": "string"
               },
-              "Cliente": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "car": {
                 "type": "string"
               },
@@ -751,6 +745,9 @@
                 "type": "string"
               },
               "tokenFireBase": {
+                "type": "string"
+              },
+              "cliente": {
                 "type": "string"
               },
               "published_at": {
