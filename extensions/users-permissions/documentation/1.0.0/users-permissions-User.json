@@ -1300,8 +1300,11 @@
                     "type": "string"
                   }
                 },
-                "operation": {
-                  "type": "string"
+                "operations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -1349,9 +1352,6 @@
                 "user": {
                   "type": "string"
                 },
-                "car": {
-                  "type": "string"
-                },
                 "date": {
                   "type": "string"
                 },
@@ -1364,11 +1364,14 @@
                 "service": {
                   "type": "string"
                 },
-                "tokenFireBase": {
-                  "type": "string"
-                },
                 "cliente": {
                   "type": "string"
+                },
+                "cars": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -1401,9 +1404,6 @@
                 "user": {
                   "type": "string"
                 },
-                "car": {
-                  "type": "string"
-                },
                 "date": {
                   "type": "string"
                 },
@@ -1416,11 +1416,14 @@
                 "service": {
                   "type": "string"
                 },
-                "tokenFireBase": {
-                  "type": "string"
-                },
                 "cliente": {
                   "type": "string"
+                },
+                "cars": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"

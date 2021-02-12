@@ -42,17 +42,18 @@
       "type": "boolean"
     },
     "users_permissions_user": {
-      "via": "cars",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "cars"
     },
     "service": {
-      "via": "car",
-      "collection": "checklists"
+      "collection": "checklists",
+      "via": "car"
     },
-    "operation": {
-      "via": "car",
-      "model": "operations"
+    "operations": {
+      "collection": "operations",
+      "via": "cars",
+      "dominant": true
     }
   }
 }

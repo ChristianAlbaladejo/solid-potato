@@ -715,49 +715,52 @@
               }
             }
           },
-          "operation": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "idOperation": {
-                "type": "uid"
-              },
-              "user": {
-                "type": "string"
-              },
-              "car": {
-                "type": "string"
-              },
-              "date": {
-                "type": "string"
-              },
-              "km": {
-                "type": "integer"
-              },
-              "nextDate": {
-                "type": "string"
-              },
-              "service": {
-                "type": "string"
-              },
-              "tokenFireBase": {
-                "type": "string"
-              },
-              "cliente": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+          "operations": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "idOperation": {
+                  "type": "uid"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "date": {
+                  "type": "string"
+                },
+                "km": {
+                  "type": "integer"
+                },
+                "nextDate": {
+                  "type": "string"
+                },
+                "service": {
+                  "type": "string"
+                },
+                "cliente": {
+                  "type": "string"
+                },
+                "cars": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -811,8 +814,11 @@
               "type": "string"
             }
           },
-          "operation": {
-            "type": "string"
+          "operations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

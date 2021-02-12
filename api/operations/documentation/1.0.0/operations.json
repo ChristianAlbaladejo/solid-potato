@@ -609,67 +609,6 @@
               }
             }
           },
-          "car": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "idCar": {
-                "type": "uid"
-              },
-              "matricula": {
-                "type": "string"
-              },
-              "modelo": {
-                "type": "string"
-              },
-              "Motor": {
-                "type": "string"
-              },
-              "num_bastidor": {
-                "type": "string"
-              },
-              "fecha_compra": {
-                "type": "string"
-              },
-              "fecha_alta": {
-                "type": "string"
-              },
-              "kilometros": {
-                "type": "integer"
-              },
-              "recordatorio_km": {
-                "type": "string"
-              },
-              "activo": {
-                "type": "boolean"
-              },
-              "users_permissions_user": {
-                "type": "string"
-              },
-              "service": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "operation": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "date": {
             "type": "string",
             "format": "date-time"
@@ -753,9 +692,6 @@
                 "type": "string"
               }
             }
-          },
-          "tokenFireBase": {
-            "type": "string"
           },
           "cliente": {
             "required": [
@@ -841,6 +777,73 @@
               }
             }
           },
+          "cars": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "idCar": {
+                  "type": "uid"
+                },
+                "matricula": {
+                  "type": "string"
+                },
+                "modelo": {
+                  "type": "string"
+                },
+                "Motor": {
+                  "type": "string"
+                },
+                "num_bastidor": {
+                  "type": "string"
+                },
+                "fecha_compra": {
+                  "type": "string"
+                },
+                "fecha_alta": {
+                  "type": "string"
+                },
+                "kilometros": {
+                  "type": "integer"
+                },
+                "recordatorio_km": {
+                  "type": "string"
+                },
+                "activo": {
+                  "type": "boolean"
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "service": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "operations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -853,9 +856,6 @@
             "type": "uid"
           },
           "user": {
-            "type": "string"
-          },
-          "car": {
             "type": "string"
           },
           "date": {
@@ -872,11 +872,14 @@
           "service": {
             "type": "string"
           },
-          "tokenFireBase": {
-            "type": "string"
-          },
           "cliente": {
             "type": "string"
+          },
+          "cars": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

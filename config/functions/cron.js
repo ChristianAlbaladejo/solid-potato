@@ -24,7 +24,6 @@ module.exports = {
     var nombre = async function () {
       const date = new Date(new Date().setUTCHours(0, 0, 0, 0));
       const newDate = addDays(date, 5);
-      console.log(newDate)
       var test = await strapi.query('operations').find({ nextDate: newDate });
       return test;
     }
@@ -33,7 +32,7 @@ module.exports = {
       // cumplimiento
       if (value.length > 0){
         for (let i = 0; i < value.length; i++) {
-          console.log(value[i].cliente)
+          
         }
       }
     });

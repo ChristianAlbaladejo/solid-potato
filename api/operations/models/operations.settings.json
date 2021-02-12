@@ -15,13 +15,9 @@
       "type": "uid"
     },
     "user": {
-      "via": "operations",
       "plugin": "users-permissions",
-      "model": "user"
-    },
-    "car": {
-      "model": "car",
-      "via": "operation"
+      "model": "user",
+      "via": "operations"
     },
     "date": {
       "type": "datetime"
@@ -36,13 +32,14 @@
       "model": "checklists",
       "via": "operation"
     },
-    "tokenFireBase": {
-      "type": "string"
-    },
     "cliente": {
-      "via": "clienteOperation",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "clienteOperation"
+    },
+    "cars": {
+      "via": "operations",
+      "collection": "car"
     }
   }
 }

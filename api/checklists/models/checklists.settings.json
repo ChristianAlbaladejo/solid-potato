@@ -15,8 +15,8 @@
       "type": "uid"
     },
     "car": {
-      "model": "car",
-      "via": "service"
+      "via": "service",
+      "model": "car"
     },
     "service": {
       "type": "enumeration",
