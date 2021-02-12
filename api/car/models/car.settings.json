@@ -15,7 +15,9 @@
       "type": "uid"
     },
     "matricula": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "modelo": {
       "type": "string"
@@ -24,7 +26,9 @@
       "type": "string"
     },
     "num_bastidor": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "fecha_compra": {
       "type": "date"

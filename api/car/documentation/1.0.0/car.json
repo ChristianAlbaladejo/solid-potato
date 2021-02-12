@@ -516,7 +516,9 @@
     "schemas": {
       "Car": {
         "required": [
-          "id"
+          "id",
+          "matricula",
+          "num_bastidor"
         ],
         "properties": {
           "id": {
@@ -771,6 +773,10 @@
         }
       },
       "NewCar": {
+        "required": [
+          "matricula",
+          "num_bastidor"
+        ],
         "properties": {
           "idCar": {
             "type": "uid"

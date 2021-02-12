@@ -527,7 +527,9 @@
           },
           "car": {
             "required": [
-              "id"
+              "id",
+              "matricula",
+              "num_bastidor"
             ],
             "properties": {
               "id": {

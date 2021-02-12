@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/12/2021 8:41:22 AM"
+    "x-generation-date": "02/12/2021 12:41:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3681,7 +3681,9 @@
     "schemas": {
       "Car": {
         "required": [
-          "id"
+          "id",
+          "matricula",
+          "num_bastidor"
         ],
         "properties": {
           "id": {
@@ -3936,6 +3938,10 @@
         }
       },
       "NewCar": {
+        "required": [
+          "matricula",
+          "num_bastidor"
+        ],
         "properties": {
           "idCar": {
             "type": "uid"
@@ -4010,7 +4016,9 @@
           },
           "car": {
             "required": [
-              "id"
+              "id",
+              "matricula",
+              "num_bastidor"
             ],
             "properties": {
               "id": {
@@ -4522,7 +4530,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "matricula",
+                "num_bastidor"
               ],
               "properties": {
                 "id": {
@@ -4889,7 +4899,9 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "matricula",
+                "num_bastidor"
               ],
               "properties": {
                 "id": {
