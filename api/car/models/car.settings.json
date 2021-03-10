@@ -58,6 +58,12 @@
       "collection": "operations",
       "via": "cars",
       "dominant": true
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "mechanic",
+      "dominant": true
     }
   }
 }

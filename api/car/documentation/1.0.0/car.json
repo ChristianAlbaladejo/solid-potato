@@ -633,6 +633,15 @@
                   "type": "string"
                 }
               },
+              "coordinates": {
+                "type": "string"
+              },
+              "mechanic": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -766,6 +775,102 @@
               }
             }
           },
+          "users": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "username",
+                "email"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "username": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                },
+                "resetPasswordToken": {
+                  "type": "string"
+                },
+                "confirmationToken": {
+                  "type": "string"
+                },
+                "confirmed": {
+                  "type": "boolean"
+                },
+                "blocked": {
+                  "type": "boolean"
+                },
+                "role": {
+                  "type": "string"
+                },
+                "cars": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "company": {
+                  "type": "string"
+                },
+                "CIF": {
+                  "type": "string"
+                },
+                "street": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "town": {
+                  "type": "string"
+                },
+                "CP": {
+                  "type": "string"
+                },
+                "operations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "tokenFireBase": {
+                  "type": "string"
+                },
+                "clienteOperation": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "coordinates": {
+                  "type": "string"
+                },
+                "mechanic": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -821,6 +926,12 @@
             }
           },
           "operations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "users": {
             "type": "array",
             "items": {
               "type": "string"

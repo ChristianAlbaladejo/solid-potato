@@ -82,15 +82,22 @@
       "type": "text"
     },
     "operations": {
-      "via": "user",
-      "collection": "operations"
+      "collection": "operations",
+      "via": "user"
     },
     "tokenFireBase": {
       "type": "string"
     },
     "clienteOperation": {
-      "via": "cliente",
-      "collection": "operations"
+      "collection": "operations",
+      "via": "cliente"
+    },
+    "coordinates": {
+      "type": "string"
+    },
+    "mechanic": {
+      "via": "users",
+      "collection": "car"
     }
   }
 }

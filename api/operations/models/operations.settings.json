@@ -15,9 +15,9 @@
       "type": "uid"
     },
     "user": {
+      "via": "operations",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "operations"
+      "model": "user"
     },
     "date": {
       "type": "datetime"
@@ -33,9 +33,9 @@
       "via": "operation"
     },
     "cliente": {
+      "via": "clienteOperation",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "clienteOperation"
+      "model": "user"
     },
     "cars": {
       "via": "operations",

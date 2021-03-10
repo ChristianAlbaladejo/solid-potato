@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/car-permissions",
+      "handler": "car-permission.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/car-permissions/count",
+      "handler": "car-permission.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/car-permissions/:id",
+      "handler": "car-permission.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/car-permissions",
+      "handler": "car-permission.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/car-permissions/:id",
+      "handler": "car-permission.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/car-permissions/:id",
+      "handler": "car-permission.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

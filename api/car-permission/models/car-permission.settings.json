@@ -1,0 +1,13 @@
+{
+  "kind": "collectionType",
+  "collectionName": "car_permissions",
+  "info": {
+    "name": "carPermission"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {}
+}
