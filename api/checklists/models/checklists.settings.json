@@ -15,8 +15,8 @@
       "type": "uid"
     },
     "car": {
-      "via": "service",
-      "model": "car"
+      "model": "car",
+      "via": "service"
     },
     "service": {
       "type": "enumeration",
@@ -71,8 +71,11 @@
       "type": "datetime"
     },
     "operation": {
-      "via": "service",
-      "model": "operations"
+      "model": "operations",
+      "via": "service"
+    },
+    "oilName": {
+      "type": "string"
     }
   }
 }

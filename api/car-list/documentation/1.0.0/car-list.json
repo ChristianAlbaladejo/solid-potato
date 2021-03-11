@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/car-permissions": {
+    "/car-lists": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCar-permission"
+                "$ref": "#/components/schemas/NewCar-list"
               }
             }
           }
         }
       }
     },
-    "/car-permissions/count": {
+    "/car-lists/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": []
       }
     },
-    "/car-permissions/{id}": {
+    "/car-lists/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCar-permission"
+                "$ref": "#/components/schemas/NewCar-list"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Car-permission": {
+      "Car-list": {
         "required": [
           "id"
         ],
@@ -535,14 +535,20 @@
           "id": {
             "type": "string"
           },
+          "list": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewCar-permission": {
+      "NewCar-list": {
         "properties": {
+          "list": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"

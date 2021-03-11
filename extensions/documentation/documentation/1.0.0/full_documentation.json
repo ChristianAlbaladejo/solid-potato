@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "03/10/2021 11:47:32 AM"
+    "x-generation-date": "03/11/2021 12:22:47 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -45,7 +45,7 @@
     }
   ],
   "paths": {
-    "/car-permissions": {
+    "/car-lists": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -97,7 +97,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": [
           {
@@ -289,7 +289,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "requestBody": {
           "description": "",
@@ -297,14 +297,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCar-permission"
+                "$ref": "#/components/schemas/NewCar-list"
               }
             }
           }
         }
       }
     },
-    "/car-permissions/count": {
+    "/car-lists/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -356,12 +356,12 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": []
       }
     },
-    "/car-permissions/{id}": {
+    "/car-lists/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -413,7 +413,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": [
           {
@@ -479,7 +479,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "requestBody": {
           "description": "",
@@ -487,7 +487,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewCar-permission"
+                "$ref": "#/components/schemas/NewCar-list"
               }
             }
           }
@@ -553,7 +553,7 @@
         },
         "summary": "",
         "tags": [
-          "Car-permission"
+          "Car-list"
         ],
         "parameters": [
           {
@@ -4203,7 +4203,7 @@
   },
   "components": {
     "schemas": {
-      "Car-permission": {
+      "Car-list": {
         "required": [
           "id"
         ],
@@ -4211,14 +4211,20 @@
           "id": {
             "type": "string"
           },
+          "list": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewCar-permission": {
+      "NewCar-list": {
         "properties": {
+          "list": {
+            "type": "object"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4359,6 +4365,9 @@
                   "type": "string"
                 }
               },
+              "logo": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -4429,6 +4438,9 @@
                   "type": "string"
                 },
                 "operation": {
+                  "type": "string"
+                },
+                "oilName": {
                   "type": "string"
                 },
                 "published_at": {
@@ -4578,6 +4590,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "logo": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -4849,6 +4864,9 @@
               }
             }
           },
+          "oilName": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4918,6 +4936,9 @@
             "format": "date-time"
           },
           "operation": {
+            "type": "string"
+          },
+          "oilName": {
             "type": "string"
           },
           "published_at": {
@@ -5028,6 +5049,9 @@
                   "type": "string"
                 }
               },
+              "logo": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -5107,6 +5131,9 @@
                 "type": "string"
               },
               "operation": {
+                "type": "string"
+              },
+              "oilName": {
                 "type": "string"
               },
               "published_at": {
@@ -5204,6 +5231,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "logo": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -5483,6 +5513,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "logo": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -5866,6 +5899,73 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "logo": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }

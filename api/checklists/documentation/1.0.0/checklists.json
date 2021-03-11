@@ -697,6 +697,9 @@
               }
             }
           },
+          "oilName": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -766,6 +769,9 @@
             "format": "date-time"
           },
           "operation": {
+            "type": "string"
+          },
+          "oilName": {
             "type": "string"
           },
           "published_at": {

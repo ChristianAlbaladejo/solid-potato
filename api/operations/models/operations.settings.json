@@ -29,8 +29,8 @@
       "type": "date"
     },
     "service": {
-      "model": "checklists",
-      "via": "operation"
+      "via": "operation",
+      "model": "checklists"
     },
     "cliente": {
       "via": "clienteOperation",

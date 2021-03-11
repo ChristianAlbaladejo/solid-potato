@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/car-permissions",
-      "handler": "car-permission.find",
+      "path": "/car-lists",
+      "handler": "car-list.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/car-permissions/count",
-      "handler": "car-permission.count",
+      "path": "/car-lists/count",
+      "handler": "car-list.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/car-permissions/:id",
-      "handler": "car-permission.findOne",
+      "path": "/car-lists/:id",
+      "handler": "car-list.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/car-permissions",
-      "handler": "car-permission.create",
+      "path": "/car-lists",
+      "handler": "car-list.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/car-permissions/:id",
-      "handler": "car-permission.update",
+      "path": "/car-lists/:id",
+      "handler": "car-list.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/car-permissions/:id",
-      "handler": "car-permission.delete",
+      "path": "/car-lists/:id",
+      "handler": "car-list.delete",
       "config": {
         "policies": []
       }

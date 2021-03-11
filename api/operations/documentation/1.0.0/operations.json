@@ -610,6 +610,9 @@
                   "type": "string"
                 }
               },
+              "logo": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -689,6 +692,9 @@
                 "type": "string"
               },
               "operation": {
+                "type": "string"
+              },
+              "oilName": {
                 "type": "string"
               },
               "published_at": {
@@ -786,6 +792,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "logo": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"

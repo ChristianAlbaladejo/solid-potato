@@ -46,13 +46,13 @@
       "type": "boolean"
     },
     "users_permissions_user": {
+      "via": "cars",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "cars"
+      "model": "user"
     },
     "service": {
-      "collection": "checklists",
-      "via": "car"
+      "via": "car",
+      "collection": "checklists"
     },
     "operations": {
       "collection": "operations",
@@ -60,9 +60,9 @@
       "dominant": true
     },
     "users": {
+      "via": "mechanic",
       "plugin": "users-permissions",
       "collection": "user",
-      "via": "mechanic",
       "dominant": true
     }
   }

@@ -1,13 +1,17 @@
 {
   "kind": "collectionType",
-  "collectionName": "car_permissions",
+  "collectionName": "car_lists",
   "info": {
-    "name": "carPermission"
+    "name": "car-list"
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
   },
-  "attributes": {}
+  "attributes": {
+    "list": {
+      "type": "json"
+    }
+  }
 }
